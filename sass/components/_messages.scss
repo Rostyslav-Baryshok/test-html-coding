@@ -1,6 +1,10 @@
 .messages {
   width: 815px;
 }
+.custom-messages__wrap-block {
+  display: flex;
+  align-items: center;
+}
 .messages__control {
   display: flex;
   align-items: center;
@@ -23,7 +27,6 @@
 }
 .messages__link {
   color: $main-color;
-  // padding: 9px 0 22px 0;
 }
 .messages__link-color {
   color: $delete-color;
@@ -74,6 +77,7 @@
   margin-right: 16px;
   text-decoration: underline;
   color: $main-color;
+  width: 136px;
 }
 .custom-messages__svg-shop {
   margin-right: 15px;
@@ -89,6 +93,10 @@
   align-items: center;
   color: $main-color;
 }
+.custom-messages__list-date {
+  margin-left: auto;
+}
+
 .custom-messages__item-date {
   margin-right: 11px;
 }

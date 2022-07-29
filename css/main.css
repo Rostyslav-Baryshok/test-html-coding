@@ -1,5 +1,5 @@
 body {
-  background-color: #8c8c8c;
+  background-color: #151515;
   font-family: "PT Serif", serif;
 }
 
@@ -124,6 +124,11 @@ address {
   width: 815px;
 }
 
+.custom-messages__wrap-block {
+  display: flex;
+  align-items: center;
+}
+
 .messages__control {
   display: flex;
   align-items: center;
@@ -202,6 +207,7 @@ address {
   margin-right: 16px;
   text-decoration: underline;
   color: #ffffff;
+  width: 136px;
 }
 
 .custom-messages__svg-shop {
@@ -217,6 +223,10 @@ address {
   display: flex;
   align-items: center;
   color: #ffffff;
+}
+
+.custom-messages__list-date {
+  margin-left: auto;
 }
 
 .custom-messages__item-date {
