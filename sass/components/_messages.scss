@@ -9,6 +9,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 57px;
+  border-bottom: solid 1px $secondary-color-two;
 }
 .messages__wrap-list {
   display: flex;
@@ -49,8 +51,14 @@
 }
 
 .custom-messages__item {
+  height: 57px;
   display: flex;
   align-items: center;
+  border-bottom: solid 1px $secondary-color-two;
+  &:hover {
+    border-top: solid 1px $accent-color;
+    border-bottom: solid 1px $accent-color;
+  }
 }
 .custom-messages__checkbox {
   width: 17px;
@@ -87,6 +95,9 @@
 .custom-messages__text {
   color: $main-color;
   margin-right: 29px;
+  background-image: linear-gradient(90deg, #ffff, #212121);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .custom-messages__list-date {
   display: flex;

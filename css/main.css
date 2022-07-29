@@ -133,6 +133,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 57px;
+  border-bottom: solid 1px #212121;
 }
 
 .messages__wrap-list {
@@ -176,8 +178,15 @@ address {
 }
 
 .custom-messages__item {
+  height: 57px;
   display: flex;
   align-items: center;
+  border-bottom: solid 1px #212121;
+}
+
+.custom-messages__item:hover {
+  border-top: solid 1px #db9351;
+  border-bottom: solid 1px #db9351;
 }
 
 .custom-messages__checkbox {
@@ -217,6 +226,9 @@ address {
 .custom-messages__text {
   color: #ffffff;
   margin-right: 29px;
+  background-image: linear-gradient(90deg, #ffff, #212121);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .custom-messages__list-date {
