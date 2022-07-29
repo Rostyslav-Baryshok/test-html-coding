@@ -8,6 +8,14 @@
   width: 221px;
   height: 293px;
   background-image: url(../../img/avatar-1x.jpeg);
+  background-size: cover;
+  background-position: center;
+  border: solid 1px $accent-color;
+}
+.left-panel__icons {
+  top: 21px;
+  left: 20px;
+  position: relative;
 }
 
 .left-panel__nav {
