@@ -1,0 +1,27 @@
+[type="checkbox"] + label {
+  position: absolute;
+}
+[type="checkbox"] {
+  position: relative;
+  left: 15px;
+  top: -4px;
+  z-index: 0;
+  -webkit-appearance: none;
+}
+[type="checkbox"] + label::before {
+  width: 17px;
+  height: 17px;
+  background-color: $body-background;
+  border: solid 1px $main-color;
+  display: block;
+  content: "";
+  float: left;
+  margin-right: 5px;
+  z-index: 5;
+  position: relative;
+}
+[type="checkbox"]:checked + label::before {
+  background-image: url("/svg/small-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
