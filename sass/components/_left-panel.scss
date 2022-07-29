@@ -28,6 +28,7 @@
 }
 
 .left-panel__wrap-link {
+  display: flex;
   margin-bottom: 108px;
 }
 .left-panel__link {
@@ -36,11 +37,18 @@
 .left-panel__link.current {
   color: $accent-color;
 }
+.left-panel__link-amount {
+  color: $accent-color;
+  margin-left: 63px;
+}
 .left-panel__item-link {
   color: $main-color;
   &:hover {
     color: $accent-color;
   }
+}
+.left-panel__item-link.current {
+  color: $accent-color;
 }
 .left-panel__list:not(:last-child) {
   margin-bottom: 108px;

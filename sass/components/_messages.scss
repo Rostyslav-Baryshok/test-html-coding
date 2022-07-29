@@ -30,6 +30,9 @@
 .messages__link {
   color: $main-color;
 }
+.messages__link-accent:hover {
+  color: $accent-color;
+}
 .messages__link-color {
   color: $delete-color;
 }
@@ -59,6 +62,9 @@
     border-top: solid 1px $accent-color;
     border-bottom: solid 1px $accent-color;
   }
+}
+.custom-messages__item:last-child {
+  margin-bottom: 49px;
 }
 .custom-messages__checkbox {
   width: 17px;
@@ -110,4 +116,43 @@
 
 .custom-messages__item-date {
   margin-right: 11px;
+}
+
+.pagination__wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination__item {
+  &:hover {
+    border-radius: 50%;
+    border: solid 1px $accent-color;
+  }
+}
+.pagination__item.current {
+  border-radius: 50%;
+  border: solid 1px $accent-color;
+}
+.pagination__item:last-child {
+  margin-right: 18px;
+}
+.pagination__link.current {
+  color: $accent-color;
+}
+
+.pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  color: $main-color;
+  &:hover {
+    color: $accent-color;
+    padding: 2px 7px;
+  }
 }

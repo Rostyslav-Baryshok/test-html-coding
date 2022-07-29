@@ -84,6 +84,7 @@ address {
 }
 
 .left-panel__wrap-link {
+  display: flex;
   margin-bottom: 108px;
 }
 
@@ -95,11 +96,20 @@ address {
   color: #db9351;
 }
 
+.left-panel__link-amount {
+  color: #db9351;
+  margin-left: 63px;
+}
+
 .left-panel__item-link {
   color: #ffffff;
 }
 
 .left-panel__item-link:hover {
+  color: #db9351;
+}
+
+.left-panel__item-link.current {
   color: #db9351;
 }
 
@@ -158,6 +168,10 @@ address {
   color: #ffffff;
 }
 
+.messages__link-accent:hover {
+  color: #db9351;
+}
+
 .messages__link-color {
   color: #ff5b5c;
 }
@@ -187,6 +201,10 @@ address {
 .custom-messages__item:hover {
   border-top: solid 1px #db9351;
   border-bottom: solid 1px #db9351;
+}
+
+.custom-messages__item:last-child {
+  margin-bottom: 49px;
 }
 
 .custom-messages__checkbox {
@@ -243,5 +261,48 @@ address {
 
 .custom-messages__item-date {
   margin-right: 11px;
+}
+
+.pagination__wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination__item:hover {
+  border-radius: 50%;
+  border: solid 1px #db9351;
+}
+
+.pagination__item.current {
+  border-radius: 50%;
+  border: solid 1px #db9351;
+}
+
+.pagination__item:last-child {
+  margin-right: 18px;
+}
+
+.pagination__link.current {
+  color: #db9351;
+}
+
+.pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+}
+
+.pagination__link:hover {
+  color: #db9351;
+  padding: 2px 7px;
 }
 /*# sourceMappingURL=main.css.map */
