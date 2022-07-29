@@ -22,8 +22,7 @@
 .messages__list:not(:last-child) {
   margin-right: 102px;
 }
-.messages__item {
-}
+
 .messages__item:not(:last-child) {
   margin-right: 18px;
 }
@@ -50,9 +49,6 @@
   justify-content: flex-end;
   background-color: $body-background;
 }
-.messages__button-img {
-}
-
 .custom-messages__item {
   height: 57px;
   display: flex;
@@ -87,6 +83,18 @@
   justify-content: center;
   align-items: center;
 }
+
+.custom-messages__profile-online {
+  position: relative;
+  left: 23px;
+  bottom: 17px;
+}
+.custom-messages__profile-icons {
+  position: relative;
+}
+.custom-messages__profile-icons--position {
+  right: 4px;
+}
 .custom-messages__user-name {
   margin-right: 16px;
   text-decoration: underline;
@@ -95,8 +103,6 @@
 }
 .custom-messages__svg-shop {
   margin-right: 15px;
-}
-.custom-messages__wrap {
 }
 .custom-messages__text {
   color: $main-color;
@@ -117,7 +123,6 @@
 .custom-messages__item-date {
   margin-right: 11px;
 }
-
 .pagination__wrap {
   display: flex;
   justify-content: flex-end;
@@ -128,10 +133,7 @@
   justify-content: flex-end;
 }
 .pagination__item {
-  &:hover {
-    border-radius: 50%;
-    border: solid 1px $accent-color;
-  }
+  margin-right: 8px;
 }
 .pagination__item.current {
   border-radius: 50%;
@@ -143,7 +145,6 @@
 .pagination__link.current {
   color: $accent-color;
 }
-
 .pagination__link {
   display: flex;
   align-items: center;
@@ -153,6 +154,5 @@
   color: $main-color;
   &:hover {
     color: $accent-color;
-    padding: 2px 7px;
   }
 }

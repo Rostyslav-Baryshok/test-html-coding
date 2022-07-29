@@ -230,6 +230,20 @@ address {
   align-items: center;
 }
 
+.custom-messages__profile-online {
+  position: relative;
+  left: 23px;
+  bottom: 17px;
+}
+
+.custom-messages__profile-icons {
+  position: relative;
+}
+
+.custom-messages__profile-icons--position {
+  right: 4px;
+}
+
 .custom-messages__user-name {
   margin-right: 16px;
   text-decoration: underline;
@@ -274,9 +288,8 @@ address {
   justify-content: flex-end;
 }
 
-.pagination__item:hover {
-  border-radius: 50%;
-  border: solid 1px #db9351;
+.pagination__item {
+  margin-right: 8px;
 }
 
 .pagination__item.current {
@@ -303,6 +316,5 @@ address {
 
 .pagination__link:hover {
   color: #db9351;
-  padding: 2px 7px;
 }
 /*# sourceMappingURL=main.css.map */
