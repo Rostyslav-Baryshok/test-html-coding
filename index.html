@@ -17,7 +17,7 @@
 
 <body>
   <section class="section">
-    <div class="container">
+    <div class="container container-flex">
       <div class="left-panel">
         <div class="left-panel__img">
           <svg class="left-panel__icons" width="20px" height="14px">
@@ -37,10 +37,236 @@
             <li class="left-panel__item"><a href="#" class="left-panel__item-link">Написать модератору</a></li>
           </ul>
         </nav>
-        <button class="left-panel__button">Купить подписку</button>
+        <button type="button" class="left-panel__button">Купить подписку</button>
       </div>
 
-      <section class="messages"></section>
+      <div class="messages">
+        <div class="messages__control">
+          <div class="messages__wrap-list">
+            <ul class="messages__list">
+              <li class="messages__item">
+                <a href="#" class="messages__link messages__link-color">Удалить</a>
+              </li>
+              <li class="messages__item">
+                <a href="#" class="messages__link">Добавить в архив</a>
+              </li>
+            </ul>
+            <ul class="messages__list">
+              <li class="messages__item">
+                <a href="#" class="messages__link current">Непрочитанные</a>
+              </li>
+              <li class="messages__item">
+                <a href="#" class="messages__link">Архив</a>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="messages__button">
+            <img class="messages__button-img" src="./svg/search.svg"></img>
+          </button>
+        </div>
+        <ul class="custom-messages">
+          <li class="custom-messages__item">
+            <div class="custom-messages__checkbox">
+              <svg class="custom-messages__icons" width="8px" height="6px">
+                <use href="./svg/symbol-defs.svg#icon-small-tick"></use>
+              </svg>
+            </div>
+            <div class="custom-messages__profile">
+              <svg class="custom-messages__profile-icons" width="16px" height="16px">
+                <use href="./svg/symbol-defs.svg#icon-profile"></use>
+              </svg>
+            </div>
+            <p class="custom-messages__user-name">Александр Анто…</p>
+            <svg class="custom-messages__svg-shop" width="17px" height="17px">
+              <use href="./svg/symbol-defs.svg#icon-shopping"></use>
+            </svg>
+            <div class="custom-messages__wrap">
+              <p class="custom-messages__text">
+                здравствуйте. как долго придется ждать нож кото
+              </p>
+            </div>
+            <ul class="custom-messages__list-date">
+              <li class="custom-messages__item-date">13/04/2018</li>
+              <li class="custom-messages__item-time">14:02</li>
+            </ul>
+          </li>
+          <li class="custom-messages__item">
+            <div class="custom-messages__checkbox">
+              <svg class="custom-messages__icons" width="8px" height="6px">
+                <use href="./svg/symbol-defs.svg#icon-small-tick"></use>
+              </svg>
+            </div>
+            <div class="custom-messages__profile">
+              <svg class="custom-messages__profile-icons" width="16px" height="16px">
+                <use href="./svg/symbol-defs.svg#icon-profile"></use>
+              </svg>
+            </div>
+            <p class="custom-messages__user-name">Gun Machine</p>
+            <svg class="custom-messages__svg-shop" width="17px" height="17px">
+              <use href="./svg/symbol-defs.svg#icon-shopping"></use>
+            </svg>
+            <div class="custom-messages__wrap">
+              <p class="custom-messages__text">
+                а почему на ноже нет ни одной царапины?
+              </p>
+            </div>
+            <ul class="custom-messages__list-date">
+              <li class="custom-messages__item-date">01/12/2018</li>
+              <li class="custom-messages__item-time">00:14</li>
+            </ul>
+          </li>
+          <li class="custom-messages__item">
+            <div class="custom-messages__checkbox">
+              <svg class="custom-messages__icons" width="8px" height="6px">
+                <use href="./svg/symbol-defs.svg#icon-small-tick"></use>
+              </svg>
+            </div>
+            <div class="custom-messages__profile">
+              <svg class="custom-messages__profile-icons" width="16px" height="16px">
+                <use href="./svg/symbol-defs.svg#icon-profile"></use>
+              </svg>
+            </div>
+            <p class="custom-messages__user-name">Диана Павлова</p>
+            <svg class="custom-messages__svg-shop" width="17px" height="17px">
+              <use href="./svg/symbol-defs.svg#icon-shopping"></use>
+            </svg>
+            <div class="custom-messages__wrap">
+              <p class="custom-messages__text">
+                нет, мне не нужно. если и вам тоже пофиг, то выб
+              </p>
+            </div>
+            <ul class="custom-messages__list-date">
+              <li class="custom-messages__item-date">13/04/2018</li>
+              <li class="custom-messages__item-time">14:02</li>
+            </ul>
+          </li>
+          <li class="custom-messages__item">
+            <div class="custom-messages__checkbox">
+              <svg class="custom-messages__icons" width="8px" height="6px">
+                <use href="./svg/symbol-defs.svg#icon-small-tick"></use>
+              </svg>
+            </div>
+            <div class="custom-messages__profile">
+              <svg class="custom-messages__profile-icons" width="16px" height="16px">
+                <use href="./svg/symbol-defs.svg#icon-profile"></use>
+              </svg>
+            </div>
+            <p class="custom-messages__user-name">Otto Zweig</p>
+            <svg class="custom-messages__svg-shop" width="17px" height="17px">
+              <use href="./svg/symbol-defs.svg#icon-shopping"></use>
+            </svg>
+            <div class="custom-messages__wrap">
+              <p class="custom-messages__text">
+                thank you! that’s great!
+              </p>
+            </div>
+            <ul class="custom-messages__list-date">
+              <li class="custom-messages__item-date">01/12/2018</li>
+              <li class="custom-messages__item-time">00:14</li>
+            </ul>
+          </li>
+          <li class="custom-messages__item">
+            <div class="custom-messages__checkbox">
+              <svg class="custom-messages__icons" width="8px" height="6px">
+                <use href="./svg/symbol-defs.svg#icon-small-tick"></use>
+              </svg>
+            </div>
+            <div class="custom-messages__profile">
+              <svg class="custom-messages__profile-icons" width="16px" height="16px">
+                <use href="./svg/symbol-defs.svg#icon-profile"></use>
+              </svg>
+            </div>
+            <p class="custom-messages__user-name">Gun Machine</p>
+            <svg class="custom-messages__svg-shop" width="17px" height="17px">
+              <use href="./svg/symbol-defs.svg#icon-shopping"></use>
+            </svg>
+            <div class="custom-messages__wrap">
+              <p class="custom-messages__text">
+                а почему на ноже нет ни одной царапины?
+              </p>
+            </div>
+            <ul class="custom-messages__list-date">
+              <li class="custom-messages__item-date">01/12/2018</li>
+              <li class="custom-messages__item-time">00:14</li>
+            </ul>
+          </li>
+          <li class="custom-messages__item">
+            <div class="custom-messages__checkbox">
+              <svg class="custom-messages__icons" width="8px" height="6px">
+                <use href="./svg/symbol-defs.svg#icon-small-tick"></use>
+              </svg>
+            </div>
+            <div class="custom-messages__profile">
+              <svg class="custom-messages__profile-icons" width="16px" height="16px">
+                <use href="./svg/symbol-defs.svg#icon-profile"></use>
+              </svg>
+            </div>
+            <p class="custom-messages__user-name">Диана Павлова</p>
+            <svg class="custom-messages__svg-shop" width="17px" height="17px">
+              <use href="./svg/symbol-defs.svg#icon-shopping"></use>
+            </svg>
+            <div class="custom-messages__wrap">
+              <p class="custom-messages__text">
+                нет, мне не нужно. если и вам тоже пофиг, то выб
+              </p>
+            </div>
+            <ul class="custom-messages__list-date">
+              <li class="custom-messages__item-date">13/04/2018</li>
+              <li class="custom-messages__item-time">14:02</li>
+            </ul>
+          </li>
+          <li class="custom-messages__item">
+            <div class="custom-messages__checkbox">
+              <svg class="custom-messages__icons" width="8px" height="6px">
+                <use href="./svg/symbol-defs.svg#icon-small-tick"></use>
+              </svg>
+            </div>
+            <div class="custom-messages__profile">
+              <svg class="custom-messages__profile-icons" width="16px" height="16px">
+                <use href="./svg/symbol-defs.svg#icon-profile"></use>
+              </svg>
+            </div>
+            <p class="custom-messages__user-name">Otto Zweig</p>
+            <svg class="custom-messages__svg-shop" width="17px" height="17px">
+              <use href="./svg/symbol-defs.svg#icon-shopping"></use>
+            </svg>
+            <div class="custom-messages__wrap">
+              <p class="custom-messages__text">
+                thank you! that’s great!
+              </p>
+            </div>
+            <ul class="custom-messages__list-date">
+              <li class="custom-messages__item-date">01/12/2018</li>
+              <li class="custom-messages__item-time">00:14</li>
+            </ul>
+          </li>
+          <li class="custom-messages__item">
+            <div class="custom-messages__checkbox">
+              <svg class="custom-messages__icons" width="8px" height="6px">
+                <use href="./svg/symbol-defs.svg#icon-small-tick"></use>
+              </svg>
+            </div>
+            <div class="custom-messages__profile">
+              <svg class="custom-messages__profile-icons" width="16px" height="16px">
+                <use href="./svg/symbol-defs.svg#icon-profile"></use>
+              </svg>
+            </div>
+            <p class="custom-messages__user-name">Александр Анто…</p>
+            <svg class="custom-messages__svg-shop" width="17px" height="17px">
+              <use href="./svg/symbol-defs.svg#icon-shopping"></use>
+            </svg>
+            <div class="custom-messages__wrap">
+              <p class="custom-messages__text">
+                здравствуйте. как долго придется ждать нож кото
+              </p>
+            </div>
+            <ul class="custom-messages__list-date">
+              <li class="custom-messages__item-date">13/04/2018</li>
+              <li class="custom-messages__item-time">14:02</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </body>

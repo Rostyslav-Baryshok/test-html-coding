@@ -1,7 +1,12 @@
+.container-flex {
+  display: flex;
+}
+
 .left-panel {
   width: 221px;
   height: 877px;
   background-color: $secondary-color;
+  margin-right: 55px;
 }
 
 .left-panel__img {
