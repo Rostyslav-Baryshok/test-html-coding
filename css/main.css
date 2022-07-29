@@ -79,7 +79,7 @@ address {
 }
 
 [type="checkbox"]:checked + label::before {
-  background-image: url("../../svg/small-tick.svg");
+  background-image: url("../svg/small-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
