@@ -18,13 +18,23 @@
 }
 .messages__list {
   display: flex;
+  @media (max-width: 939.98px) {
+    flex-direction: column;
+  }
 }
 .messages__list:not(:last-child) {
   margin-right: 102px;
+
+  @media (max-width: 939.98px) {
+    margin-right: 50px;
+  }
 }
 
 .messages__item:not(:last-child) {
   margin-right: 18px;
+  @media (max-width: 939.98px) {
+    margin-bottom: 4px;
+  }
 }
 .messages__link {
   color: $main-color;
@@ -48,6 +58,10 @@
   align-items: center;
   justify-content: flex-end;
   background-color: $body-background;
+
+  @media (max-width: 1023.98px) {
+    width: 130px;
+  }
 }
 .custom-messages__item {
   height: 57px;
@@ -101,6 +115,10 @@
   text-decoration: underline;
   color: $main-color;
   width: 136px;
+
+  @media (max-width: 768px) {
+    width: 105px;
+  }
 }
 .custom-messages__svg-shop {
   margin-right: 15px;
@@ -110,19 +128,32 @@
   background-image: linear-gradient(90deg, #ffff, #212121);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 939.98px) {
+    margin-right: 5px;
+    font-size: 12px;
+  }
 }
 
 .custom-messages__list-date {
   display: flex;
   align-items: center;
   color: $main-color-three;
+
+  @media (max-width: 939.98px) {
+    font-size: 12px;
+    align-items: flex-end;
+    flex-direction: column;
+  }
 }
 .custom-messages__list-date {
   margin-left: auto;
 }
 
 .custom-messages__item-date {
-  margin-right: 11px;
+  @media (min-width: 940.98px) {
+    margin-right: 11px;
+  }
 }
 .pagination__wrap {
   display: flex;
@@ -155,5 +186,10 @@
   color: $main-color;
   &:hover {
     color: $accent-color;
+  }
+
+  @media (max-width: 939.98px) {
+    width: 16px;
+    height: 16px;
   }
 }

@@ -3,6 +3,18 @@ body {
   font-family: "PT Serif", serif;
 }
 
+@media (max-width: 939.98px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: 12px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -95,6 +107,13 @@ address {
   margin-right: 55px;
 }
 
+@media (max-width: 768px) {
+  .left-panel {
+    width: 200px;
+    margin-right: 30px;
+  }
+}
+
 .left-panel__img {
   width: 221px;
   height: 293px;
@@ -102,6 +121,12 @@ address {
   background-size: cover;
   background-position: center;
   border: solid 1px #db9351;
+}
+
+@media (max-width: 768px) {
+  .left-panel__img {
+    width: 200px;
+  }
 }
 
 .left-panel__icons {
@@ -112,6 +137,13 @@ address {
 
 .left-panel__nav {
   padding: 53px 0 53px 30px;
+}
+
+@media (max-width: 768px) {
+  .left-panel__nav {
+    width: 200px;
+    padding: 30px 0 30px 20px;
+  }
 }
 
 .left-panel__wrap-link {
@@ -187,12 +219,30 @@ address {
   display: flex;
 }
 
+@media (max-width: 939.98px) {
+  .messages__list {
+    flex-direction: column;
+  }
+}
+
 .messages__list:not(:last-child) {
   margin-right: 102px;
 }
 
+@media (max-width: 939.98px) {
+  .messages__list:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .messages__item:not(:last-child) {
   margin-right: 18px;
+}
+
+@media (max-width: 939.98px) {
+  .messages__item:not(:last-child) {
+    margin-bottom: 4px;
+  }
 }
 
 .messages__link {
@@ -220,6 +270,12 @@ address {
   align-items: center;
   justify-content: flex-end;
   background-color: #151515;
+}
+
+@media (max-width: 1023.98px) {
+  .messages__button {
+    width: 130px;
+  }
 }
 
 .custom-messages__item {
@@ -282,6 +338,12 @@ address {
   width: 136px;
 }
 
+@media (max-width: 768px) {
+  .custom-messages__user-name {
+    width: 105px;
+  }
+}
+
 .custom-messages__svg-shop {
   margin-right: 15px;
 }
@@ -293,18 +355,35 @@ address {
   -webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 939.98px) {
+  .custom-messages__text {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+}
+
 .custom-messages__list-date {
   display: flex;
   align-items: center;
   color: #8c8c8c;
 }
 
+@media (max-width: 939.98px) {
+  .custom-messages__list-date {
+    font-size: 12px;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
 .custom-messages__list-date {
   margin-left: auto;
 }
 
-.custom-messages__item-date {
-  margin-right: 11px;
+@media (min-width: 940.98px) {
+  .custom-messages__item-date {
+    margin-right: 11px;
+  }
 }
 
 .pagination__wrap {
@@ -346,5 +425,12 @@ address {
 
 .pagination__link:hover {
   color: #db9351;
+}
+
+@media (max-width: 939.98px) {
+  .pagination__link {
+    width: 16px;
+    height: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
