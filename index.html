@@ -347,40 +347,27 @@
   <!-- ////////////////////// -->
   <div class="mobile-nav" data-menu>
     <div class="mobile-nav__container">
-      <ul class="mobile-nav__list list">
-
-        <li class="mobile-nav__item">
-          <a class="mobile-nav__link link" href="#">Контакты</a>
-        </li>
-      </ul>
       <div>
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a class="contacts__link contacts__link--big-size contacts__link--accent-color link"
-              href="tel:+380961111111">+38 096 111 11
-              11</a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
+        <div class="mobile-nav__img">
+          <svg class="mobile-nav__icons" width="20px" height="14px">
+            <use href="./svg/symbol-defs.svg#icon-avatar-tick"></use>
+          </svg>
+        </div>
+        <div class="mobile-nav__wrap-link">
+          <a href="#" class="mobile-nav__link current">Сообщения</a>
+          <div class="mobile-nav__link-amount">3</div>
+        </div>
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item"><a href="#" class="mobile-nav__item-link">Профиль</a></li>
+          <li class="mobile-nav__item"><a href="#" class="mobile-nav__item-link">Настройки</a></li>
+          <li class="mobile-nav__item"><a href="#" class="mobile-nav__item-link">Вопросы</a></li>
+          <li class="mobile-nav__item"><a href="#" class="mobile-nav__item-link">Написать модератору</a></li>
         </ul>
-        <ul class="social-text-links list">
-          <li class="social-text-links__item">
-            <a href="#" class="social-text-links__link link">Instagram</a>
-          </li>
-          <li class="social-text-links__item">
-            <a href="#" class="social-text-links__link link">Twitter</a>
-          </li>
-          <li class="social-text-links__item">
-            <a href="#" class="social-text-links__link link">Facebook</a>
-          </li>
-          <li class="social-text-links__item">
-            <a href="#" class="social-text-links__link link">LinkedIn</a>
-          </li>
-        </ul>
+        <button type="button" class="mobile-nav__button">Купить подписку</button>
       </div>
     </div>
   </div>
+  <!-- /////////////// -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
