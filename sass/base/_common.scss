@@ -49,6 +49,9 @@ address {
 }
 .section {
   padding: 30px 0;
+  @media (max-width: 768px) {
+    padding: 5px 0;
+  }
 }
 .container {
   padding: 0 15px;
