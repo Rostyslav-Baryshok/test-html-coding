@@ -28,6 +28,9 @@
   @media (max-width: 939.98px) {
     margin-right: 50px;
   }
+  @media (max-width: 767px) {
+    margin-right: 20px;
+  }
 }
 
 .messages__item:not(:last-child) {
@@ -62,6 +65,9 @@
   @media (max-width: 1023.98px) {
     width: 130px;
   }
+  @media (max-width: 767px) {
+    width: 70px;
+  }
 }
 .custom-messages__item {
   height: 57px;
@@ -71,6 +77,12 @@
   &:hover {
     border-top: solid 1px $accent-color;
     border-bottom: solid 1px $accent-color;
+  }
+
+  @media (max-width: 767px) {
+    height: 70px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .custom-messages__item:last-child {
@@ -97,12 +109,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 767px) {
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+  }
 }
 
 .custom-messages__profile-online {
   position: relative;
   left: 23px;
   bottom: 17px;
+
+  @media (max-width: 767px) {
+    left: 18px;
+    bottom: 10px;
+  }
 }
 .custom-messages__profile-icons {
   position: relative;
@@ -145,14 +168,23 @@
     align-items: flex-end;
     flex-direction: column;
   }
+  @media (max-width: 767px) {
+    flex-direction: row;
+  }
 }
 .custom-messages__list-date {
   margin-left: auto;
+  @media (max-width: 767px) {
+    font-size: 8px;
+  }
 }
 
 .custom-messages__item-date {
   @media (min-width: 940.98px) {
     margin-right: 11px;
+  }
+  @media (max-width: 767px) {
+    margin-right: 5px;
   }
 }
 .pagination__wrap {
@@ -166,13 +198,19 @@
 }
 .pagination__item {
   margin-right: 8px;
+
+  @media (max-width: 767px) {
+    margin-right: 3px;
+  }
 }
 .pagination__item.current {
   border-radius: 50%;
   border: solid 1px $accent-color;
 }
 .pagination__item:last-child {
-  margin-right: 18px;
+  @media (min-width: 768px) {
+    margin-right: 18px;
+  }
 }
 .pagination__link.current {
   color: $accent-color;
@@ -191,5 +229,10 @@
   @media (max-width: 939.98px) {
     width: 16px;
     height: 16px;
+  }
+}
+.pagination__icon {
+  @media (max-width: 767px) {
+    display: none;
   }
 }

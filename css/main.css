@@ -15,6 +15,12 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  body {
+    font-size: 10px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -111,6 +117,12 @@ address {
   .left-panel {
     width: 200px;
     margin-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .left-panel {
+    display: none;
   }
 }
 
@@ -236,6 +248,12 @@ address {
   }
 }
 
+@media (max-width: 767px) {
+  .messages__list:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
 .messages__item:not(:last-child) {
   margin-right: 18px;
 }
@@ -279,6 +297,12 @@ address {
   }
 }
 
+@media (max-width: 767px) {
+  .messages__button {
+    width: 70px;
+  }
+}
+
 .custom-messages__item {
   height: 57px;
   display: flex;
@@ -289,6 +313,14 @@ address {
 .custom-messages__item:hover {
   border-top: solid 1px #db9351;
   border-bottom: solid 1px #db9351;
+}
+
+@media (max-width: 767px) {
+  .custom-messages__item {
+    height: 70px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .custom-messages__item:last-child {
@@ -318,10 +350,25 @@ address {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .custom-messages__profile {
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+  }
+}
+
 .custom-messages__profile-online {
   position: relative;
   left: 23px;
   bottom: 17px;
+}
+
+@media (max-width: 767px) {
+  .custom-messages__profile-online {
+    left: 18px;
+    bottom: 10px;
+  }
 }
 
 .custom-messages__profile-icons {
@@ -377,13 +424,31 @@ address {
   }
 }
 
+@media (max-width: 767px) {
+  .custom-messages__list-date {
+    flex-direction: row;
+  }
+}
+
 .custom-messages__list-date {
   margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .custom-messages__list-date {
+    font-size: 8px;
+  }
 }
 
 @media (min-width: 940.98px) {
   .custom-messages__item-date {
     margin-right: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-messages__item-date {
+    margin-right: 5px;
   }
 }
 
@@ -402,13 +467,21 @@ address {
   margin-right: 8px;
 }
 
+@media (max-width: 767px) {
+  .pagination__item {
+    margin-right: 3px;
+  }
+}
+
 .pagination__item.current {
   border-radius: 50%;
   border: solid 1px #db9351;
 }
 
-.pagination__item:last-child {
-  margin-right: 18px;
+@media (min-width: 768px) {
+  .pagination__item:last-child {
+    margin-right: 18px;
+  }
 }
 
 .pagination__link.current {
@@ -432,6 +505,12 @@ address {
   .pagination__link {
     width: 16px;
     height: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pagination__icon {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
