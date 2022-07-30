@@ -71,6 +71,45 @@ address {
   max-width: 1120px;
 }
 
+.menu-button {
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button:focus {
+  fill: #db9351;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button.is-open {
+  position: fixed;
+  top: 21px;
+  right: 25px;
+}
+
+.menu-button .menu-button__icon-cross {
+  opacity: 0;
+}
+
+.menu-button.is-open .menu-button__icon-cross {
+  opacity: 1;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  opacity: 0;
+}
+
 [type="checkbox"] + label {
   position: absolute;
 }

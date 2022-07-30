@@ -1,0 +1,32 @@
+.menu-button {
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+  transition: fill 250ms $timing-function;
+
+  &:focus {
+    fill: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-button.is-open {
+  position: fixed;
+  top: 21px;
+  right: 25px;
+}
+
+.menu-button .menu-button__icon-cross {
+  opacity: 0;
+}
+.menu-button.is-open .menu-button__icon-cross {
+  opacity: 1;
+}
+.menu-button.is-open .menu-button__icon-menu {
+  opacity: 0;
+}
